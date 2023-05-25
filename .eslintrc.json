@@ -6,17 +6,15 @@
 	},
 	"extends": [
 		"eslint:recommended",
-		"prettier"
-		// "plugin:vue/vue3-essential",
-		// "plugin:@typescript-eslint/recommended",
-		// "@vue/eslint-config-typescript",
-		// "@vue/eslint-config-prettier"
+		"prettier",
+		"@nuxtjs/eslint-config-typescript"
 	],
 	"parser": "vue-eslint-parser",
 	"parserOptions": {
-		"ecmaVersion": "latest"
+		"ecmaVersion": "latest",
+		"sourceType": "module"
 	},
-	"plugins": [],
+	"plugins": ["@typescript-eslint"],
 	"rules": {
 		"quotes": ["error", "single"],
 		"semi": ["error", "never"],

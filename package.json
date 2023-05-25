@@ -13,10 +13,18 @@
     "@invictus.codes/nuxt-vuetify": "^0.2.20",
     "@types/node": "^18",
     "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "nuxt": "^3.5.1",
     "prettier": "^2.8.8",
     "sass": "^1.62.1"
+  },
+  "lint-staged": {
+    "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ],
+    "src/**/*.scss": "prettier --write"
   }
-
 }

@@ -6,6 +6,7 @@
 	},
 	"extends": [
 		"eslint:recommended",
+		"prettier"
 		// "plugin:vue/vue3-essential",
 		// "plugin:@typescript-eslint/recommended",
 		// "@vue/eslint-config-typescript",

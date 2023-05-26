@@ -9,9 +9,7 @@
 		</v-card-item>
 
 		<v-card-actions>
-			<NuxtLink to="/test">
-				<v-btn-primary> Button </v-btn-primary>
-			</NuxtLink>
+			<v-btn-primary> Button </v-btn-primary>
 			<v-btn-secondary> Button </v-btn-secondary>
 		</v-card-actions>
 		<v-row class="d-flex align-center justify-center">

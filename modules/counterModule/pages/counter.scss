@@ -1,0 +1,14 @@
+.counter {
+	border: 1px solid #ccc;
+	display: flex;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	gap: 20px;
+
+	& &__value {
+		font-size: 20px;
+		font-weight: 600;
+	}
+}

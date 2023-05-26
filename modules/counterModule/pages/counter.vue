@@ -1,6 +1,8 @@
 <template>
   <div>
     <div>Counter Page</div>
+    <v-app-bar-nav-icon />
+
     <v-card-item>
       <div class="counter">
         <v-btn icon="$vuetify" @click="decrement">

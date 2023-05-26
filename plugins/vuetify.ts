@@ -2,12 +2,21 @@ import { createVuetify, ThemeDefinition } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { VBtn } from 'vuetify/components/VBtn'
+import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import '@mdi/font/css/materialdesignicons.css'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     ssr: true,
     components,
     directives,
+    icons: {
+      defaultSet: 'mdi',
+      aliases,
+      sets: {
+        mdi
+      }
+    },
     theme: {
       defaultTheme: 'lightTheme',
       themes: {
